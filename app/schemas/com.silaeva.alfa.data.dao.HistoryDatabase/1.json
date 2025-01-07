@@ -1,0 +1,136 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "140f9c33b4937e7fc7941db4505e80a8",
+    "entities": [
+      {
+        "tableName": "BinChecked",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bin` INTEGER NOT NULL, `scheme` TEXT, `type` TEXT, `brand` TEXT, `prepaid` INTEGER, `length` INTEGER, `luhn` INTEGER, `numeric` TEXT, `alpha2` TEXT, `countryName` TEXT, `emoji` TEXT, `currency` TEXT, `latitude` REAL, `longitude` REAL, `bankName` TEXT, `url` TEXT, `phone` TEXT, `city` TEXT, PRIMARY KEY(`bin`))",
+        "fields": [
+          {
+            "fieldPath": "bin",
+            "columnName": "bin",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "binInfoChecked.scheme",
+            "columnName": "scheme",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.brand",
+            "columnName": "brand",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.prepaid",
+            "columnName": "prepaid",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.number.length",
+            "columnName": "length",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.number.luhn",
+            "columnName": "luhn",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.numeric",
+            "columnName": "numeric",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.alpha2",
+            "columnName": "alpha2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.countryName",
+            "columnName": "countryName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.emoji",
+            "columnName": "emoji",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.currency",
+            "columnName": "currency",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.latitude",
+            "columnName": "latitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.country.longitude",
+            "columnName": "longitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.bank.bankName",
+            "columnName": "bankName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.bank.url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.bank.phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "binInfoChecked.bank.city",
+            "columnName": "city",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "bin"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '140f9c33b4937e7fc7941db4505e80a8')"
+    ]
+  }
+}
