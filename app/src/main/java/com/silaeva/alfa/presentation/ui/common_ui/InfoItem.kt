@@ -224,7 +224,7 @@ fun InfoItem(
 
             if (bankUrl != "") {
                 Text(
-                    modifier = Modifier.clickable{
+                    modifier = Modifier.clickable {
                         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(bankUrl))
                         context.startActivity(intent)
                     },

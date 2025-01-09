@@ -3,8 +3,8 @@ package com.silaeva.alfa
 import android.app.Application
 import com.silaeva.alfa.data.repository_impl.HistoryRepositoryImpl
 import com.silaeva.alfa.data.repository_impl.InfoRepositoryImpl
-import com.silaeva.alfa.domain.di.interactorModule
-import com.silaeva.alfa.domain.di.presentationModule
+import com.silaeva.alfa.data.di.interactorModule
+import com.silaeva.alfa.data.di.presentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
