@@ -1,4 +1,4 @@
-package com.silaeva.alfa.domain.di
+package com.silaeva.alfa.data.di
 
 import com.silaeva.alfa.data.repository_impl.HistoryRepositoryImpl
 import com.silaeva.alfa.data.repository_impl.InfoRepositoryImpl
